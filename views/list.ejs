@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <script src="logic.js"></script>
+
+        <table class="container">
+      	<thead>
+      		<tr>
+      			<th><h1 id="i">College ID</h1></th>
+      			<th><h1>Name</h1></th>
+      			<th><h1>Year Founded</h1></th>
+      			<th><h1>State</h1></th>
+      		</tr>
+      	</thead>
+      	<tbody>
+
+        <%  for(i=0;i<id1.length;i++){ %>
+      		<tr>
+      			<td> <%=id1[i]%> </td>
+      			<td> <%=college[i]%> </td>
+      			<td> <%=year[i]%> </td>
+      			<td> <%=state[i]%> </td>
+      		</tr>
+        <% } %>
+      	</tbody>
+      </table>
+  </body>
+</html>
